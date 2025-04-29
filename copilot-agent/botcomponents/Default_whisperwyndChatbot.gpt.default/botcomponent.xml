@@ -1,0 +1,11 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.gpt.default">
+  <componenttype>15</componenttype>
+  <description>An agent that can answers common questions about the Whysperwynd Book Series</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Whisperwynd Story Generator</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

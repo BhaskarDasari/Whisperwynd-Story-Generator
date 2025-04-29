@@ -1,0 +1,12 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.component.Bubbles.pdf_AfW">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Bubbles.pdf</description>
+  <filedata mimetype="application/pdf">Bubbles.pdf</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Bubbles.pdf</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

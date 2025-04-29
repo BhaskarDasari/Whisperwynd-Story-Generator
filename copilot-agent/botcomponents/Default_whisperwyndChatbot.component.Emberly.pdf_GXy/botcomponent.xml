@@ -1,0 +1,12 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.component.Emberly.pdf_GXy">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Emberly.pdf</description>
+  <filedata mimetype="application/pdf">Emberly.pdf</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Emberly.pdf</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

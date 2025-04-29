@@ -1,0 +1,12 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.topic.WorldWhisperwynd_jfPPQZAILjZPmT3UicTQ8">
+  <category>Authoritative</category>
+  <componenttype>16</componenttype>
+  <description>This knowledge source provides information found in WorldWhisperwynd SharePoint.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>WorldWhisperwynd</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

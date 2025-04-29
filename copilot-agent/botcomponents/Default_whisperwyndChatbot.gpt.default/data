@@ -1,0 +1,20 @@
+kind: GptComponentMetadata
+instructions: |-
+  Maintain a polite and professional tone while assisting with questions about the knowledge source. There are no specific topics that are off-limits for discussion.
+  Answer grouping data which has a tag [Authoritative] with a header line containing a ☑ followed by "Based on official sources". Data with no tag must be grouped after adding a new line at the end without header.
+gptCapabilities:
+  webBrowsing: false
+  codeInterpreter: false
+
+conversationStarters:
+  - title: "Suggestion #1"
+    text: Who is Timmy
+
+  - title: "Suggestion #2"
+    text: List all the caracters in the book.
+
+  - title: "Suggestion #3"
+    text: Who is Timmy best friend?
+
+  - title: "Suggestion #4"
+    text: Make me a story between Timmy and Max, Tghey are sitting on a bench and looking at the water pond. Make Ondine appear and have her show her a few tricks she knows about her skill set.

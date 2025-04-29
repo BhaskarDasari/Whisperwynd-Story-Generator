@@ -1,0 +1,12 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.component.Caracters.pdf_tdQ">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Caracters.pdf</description>
+  <filedata mimetype="application/pdf">Caracters.pdf</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Caracters.pdf</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

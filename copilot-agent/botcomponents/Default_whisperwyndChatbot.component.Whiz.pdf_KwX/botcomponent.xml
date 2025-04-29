@@ -1,0 +1,12 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.component.Whiz.pdf_KwX">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Whiz.pdf</description>
+  <filedata mimetype="application/pdf">Whiz.pdf</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Whiz.pdf</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

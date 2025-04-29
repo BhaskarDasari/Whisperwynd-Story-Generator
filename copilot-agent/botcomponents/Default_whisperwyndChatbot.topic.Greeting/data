@@ -1,0 +1,36 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Greeting
+    includeInOnSelectIntent: false
+    triggerQueries:
+      - Good afternoon
+      - Good morning
+      - Hello
+      - Hey
+      - Hi
+
+  actions:
+    - kind: SendActivity
+      id: sendMessage_abmysR
+      activity:
+        text:
+          - Welcome to the Whisperwynd Chatbot.
+        speak:
+          - Hello, <break strength="medium" /> how can I help?
+
+    - kind: SendActivity
+      id: sendActivity_g8TI7r
+      activity: |-
+        You are connected to Whisperynd Book of Knowledge.  It is an online resource to allow you to interact with the Magic Garden.
+        
+        You can ask me a question about the book.  As an example you can ask "**Who is Timmy**".
+        
+        You can also ask it to help create a story from the book.  Just type "**Make a Story**".    You can also try to add a new caracter to Whisperwynd.  **"Add Character".**
+        - Who are the fairies
+        - What do you know about the Gloom.
+
+    - kind: CancelAllDialogs
+      id: cancelAllDialogs_01At22

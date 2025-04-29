@@ -1,0 +1,146 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    triggerQueries:
+      - create a story
+      - tell me a story
+      - make up a story
+      - generate a story
+      - write a story for me
+      - story time
+      - compose a tale
+      - spin me a yarn
+      - invent a narrative
+
+  actions:
+    - kind: Question
+      id: question_PC7uk6
+      interruptionPolicy:
+        allowInterruption: true
+
+      variable: init:Topic.MainPerson
+      prompt: |
+        You have selecteed to make a new story based on WhisperWynd.
+        
+        **Who is the Main character for the Story?**
+      entity:
+        kind: EmbeddedEntity
+        definition:
+          kind: ClosedListEntity
+          optionSetName: MainPersonOptions
+          items:
+            - id: Timmy
+              displayName: Timmy
+
+            - id: Miss Pearl
+              displayName: Miss Pearl
+
+            - id: Max
+              displayName: Max
+
+            - id: Denise
+              displayName: Denise
+
+            - id: Bubbles
+              displayName: Bubbles
+
+    - kind: Question
+      id: question_ZR8MDL
+      interruptionPolicy:
+        allowInterruption: true
+
+      variable: init:Topic.Second
+      prompt: **Who is the second character for the story?**
+      entity:
+        kind: EmbeddedEntity
+        definition:
+          kind: ClosedListEntity
+          optionSetName: SecondPersonOptions
+          items:
+            - id: Timmy
+              displayName: Timmy
+
+            - id: Miss Pearl
+              displayName: Miss Pearl
+
+            - id: Max
+              displayName: Max
+
+            - id: Denise
+              displayName: Denise
+
+            - id: Bubbles
+              displayName: Bubbles
+
+    - kind: Question
+      id: Question_BwEjD2
+      variable: Topic.StoryOutline
+      prompt: "Please provide an outline of the story.  An example could be: **They are sitting on a bench and looking at the water pond. Make Ondine appear and have her show her a few tricks she knows about her skill set.**"
+      entity: StringPrebuiltEntity
+
+    - kind: SendActivity
+      id: SendActivity_hQP6WX
+      activity:
+        text:
+          - Take this prompt and submit it back
+        attachments:
+          - kind: AdaptiveCardTemplate
+            cardContent: "={ type: \"AdaptiveCard\", body: [ { type: \"TextBlock\", size: \"Medium\", weight: \"Bolder\", text: \"Story Summary\" }, { type: \"FactSet\", facts: [ { title: \"Main Character\", value: Text(Topic.MainPerson) }, { title: \"Second Character\", value: Text(Topic.Second) }, { title: \"Story Outline\", value: Text(Topic.StoryOutline) } ] } ], '$schema': \"http://adaptivecards.io/schemas/adaptive-card.json\", version: \"1.5\"}"
+
+    - kind: Question
+      id: question_GqaW8E
+      interruptionPolicy:
+        allowInterruption: true
+
+      variable: init:Topic.varStoryTitle
+      prompt: Story Title
+      entity: StringPrebuiltEntity
+
+    - kind: SearchAndSummarizeContent
+      id: 2eg2ZD
+      variable: Topic.varStoryContent
+      userInput: "=Concatenate(\"Create a story with the following caracters. \", Topic.MainPerson, \" with \", Topic.Second, \"The outline of the story is the following: \", Topic.StoryOutline, \" Make sure to describe the physical properties of each caracters.  Add conversations with the caracters\")"
+
+    - kind: InvokeFlowAction
+      id: invokeFlowAction_ezsHdu
+      input:
+        binding:
+          text: =Topic.varStoryTitle
+          text_1: =Topic.varStoryContent
+
+      output:
+        binding:
+          resultcode: Topic.ResultCode
+
+      flowId: 305346d2-7121-f011-9989-6045bd018e81
+
+    - kind: SendActivity
+      id: sendActivity_N4kmwK
+      activity: Hoping you enjoy the story.{Topic.ResultCode}
+
+    - kind: BeginDialog
+      id: 18IKrl
+      input: {}
+      dialog: Default_whisperwyndChatbot.component.SharePoint-Createfile
+      output:
+        binding:
+          DisplayName: Topic.DisplayName
+          ETag: Topic.ETag
+          FileLocator: Topic.FileLocator
+          Id: Topic.Id
+          IsFolder: Topic.IsFolder
+          ItemId: Topic.ItemId
+          LastModified: Topic.LastModified
+          MediaType: Topic.MediaType
+          Name: Topic.Name
+          Path: Topic.Path
+          Size: Topic.Size
+
+    - kind: SendActivity
+      id: sendActivity_38jCqp
+      activity: The story was added to Generated Stories
+
+inputType: {}
+outputType: {}

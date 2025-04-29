@@ -1,0 +1,12 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.component.Flora.pdf_qrM">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Flora.pdf</description>
+  <filedata mimetype="application/pdf">Flora.pdf</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Flora.pdf</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

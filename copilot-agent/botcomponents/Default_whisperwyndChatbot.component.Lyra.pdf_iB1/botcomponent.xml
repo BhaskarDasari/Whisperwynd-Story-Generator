@@ -1,0 +1,12 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.component.Lyra.pdf_iB1">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Lyra.pdf</description>
+  <filedata mimetype="application/pdf">Lyra.pdf</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Lyra.pdf</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

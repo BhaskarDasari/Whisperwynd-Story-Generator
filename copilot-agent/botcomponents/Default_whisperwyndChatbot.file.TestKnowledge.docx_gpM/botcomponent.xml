@@ -1,0 +1,12 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.file.TestKnowledge.docx_gpM">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Test Knowledge.docx</description>
+  <filedata mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document">Test%20Knowledge.docx</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Test Knowledge.docx</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

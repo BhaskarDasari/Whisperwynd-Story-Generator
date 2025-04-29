@@ -1,0 +1,15 @@
+kind: AdaptiveDialog
+modelDescription: This topic allow a user to engage in a RPG game around WhisperWynd
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: InvokeAIBuilderModelAction
+      id: invokeAIBuilderModelAction_uvKT57
+      input: {}
+      output: {}
+      aIModelId: 9c63d8e3-6a82-4a59-894d-cd985ebe16e0
+
+inputType: {}
+outputType: {}

@@ -1,0 +1,12 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.component.Hootington.pdf_1VP">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Hootington.pdf</description>
+  <filedata mimetype="application/pdf">Hootington.pdf</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Hootington.pdf</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

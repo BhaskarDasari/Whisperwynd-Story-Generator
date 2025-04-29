@@ -1,0 +1,12 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.component.Zoe.pdf_BWa">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Zoe.pdf</description>
+  <filedata mimetype="application/pdf">Zoe.pdf</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Zoe.pdf</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

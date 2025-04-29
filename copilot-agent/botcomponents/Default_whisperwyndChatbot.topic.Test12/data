@@ -1,0 +1,57 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: AdaptiveCardPrompt
+      id: GaFrOS
+      card: |-
+        {
+          "type": "AdaptiveCard",
+          "version": "1.5",
+          "body": [
+            {
+              "type": "TextBlock",
+              "text": "Select a person:",
+              "wrap": true
+            },
+            {
+              "type": "Input.ChoiceSet",
+              "id": "selectedPerson",
+              "choices": [
+                {
+                  "title": "Alice",
+                  "value": "1"
+                },
+                {
+                  "title": "Bob",
+                  "value": "2"
+                },
+                {
+                  "title": "Charlie",
+                  "value": "3"
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": "Action.Submit",
+              "title": "Submit"
+            }
+          ],
+          "$schema": "https://adaptivecards.io/schemas/adaptive-card.json"
+        }
+      output:
+        binding:
+          actionSubmitId: Topic.actionSubmitId
+          selectedPerson: Topic.selectedPerson
+
+      outputType:
+        properties:
+          actionSubmitId: String
+          selectedPerson: String
+
+inputType: {}
+outputType: {}

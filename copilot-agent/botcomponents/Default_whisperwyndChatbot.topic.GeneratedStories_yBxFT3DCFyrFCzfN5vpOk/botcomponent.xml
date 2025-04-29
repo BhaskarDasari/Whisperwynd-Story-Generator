@@ -1,0 +1,12 @@
+<botcomponent schemaname="Default_whisperwyndChatbot.topic.GeneratedStories_yBxFT3DCFyrFCzfN5vpOk">
+  <category>Authoritative</category>
+  <componenttype>16</componenttype>
+  <description>GeneratedSTories</description>
+  <iscustomizable>0</iscustomizable>
+  <name>GeneratedStories</name>
+  <parentbotid>
+    <schemaname>Default_whisperwyndChatbot</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

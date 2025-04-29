@@ -1,0 +1,4 @@
+kind: KnowledgeSourceConfiguration
+source:
+  kind: SharePointSearchSource
+  site: https://argentquest.sharepoint.com/sites/WorldWhisperwynd/Shared%20Documents/testload.docx
