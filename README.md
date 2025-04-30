@@ -245,6 +245,7 @@ We follow GitHub best practices, including:
 
 ## Future Work
 
+- Sentiment Analysis by using AI to detect the tone and emotions in the story, giving users feedback on how their writing feels (e.g., happy, sad, exciting).
 - Using Azure database for managing all the world data, which we do with sharepoint currently
 - Implement story-to-PDF conversion for offline sharing.
 - Integrate Copilot agent with Azure DevOps for seemless deployments.
