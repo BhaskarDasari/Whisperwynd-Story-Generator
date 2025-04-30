@@ -27,7 +27,7 @@ All built on Microsoft’s AI stack and deployed through **Azure Web Services** 
 
 - **AI & NLP**: Azure OpenAI (GPT + RAG)
 - **AI Agent**: Microsoft Copilot Studio
-- **Frontend/Backend**: WordPress + Python Flask
+- **Frontend(Image Generator)**: Python Flask
 - **Cloud Services**: Azure Web Services, Azure Blob Storage, SharePoint
 - **Image Generation**: AI-driven visualization tools
 - **Version Control & Maintenance**: GitHub for source code management, collaboration, and issue tracking
