@@ -76,9 +76,8 @@ Set up your AI agent using **Microsoft Copilot Studio**, integrated with **Azure
   - Use the built-in web chat to test your agent inside copilot studio and microsoft teams 
   - Deploy to web (e.g., Azure website, medium)
   - Monitor performance via **Copilot Analytics**
- 
-#### Agent Outcome Preview
-[view sample file](https://github.com/BhaskarDasari/Whisperwynd-Story-Generator/blob/main/Sample%20Story%20Generated%20By%20Copilot%20AI%20Agent.pdf)
+- **Agent Outcome Preview**  
+  - [view sample file](https://github.com/BhaskarDasari/Whisperwynd-Story-Generator/blob/main/Sample%20Story%20Generated%20By%20Copilot%20AI%20Agent.pdf)
 
 ### 🔧 Setup for Flask app
 
