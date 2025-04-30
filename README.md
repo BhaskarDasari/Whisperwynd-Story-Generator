@@ -58,7 +58,7 @@ Please contact the team for access if you're a reviewer or collaborator.
 
 All project code is version-controlled and actively maintained in a GitHub repository to ensure:
 - Easy collaboration and code reviews within the team
-- CI/CD workflows for deployment using GitHub Actions and Azure
+- CI/CD workflows for deployment using GitHub Actions and Azure will be implemented in future
 - Transparent issue tracking and feature planning
 - Secure and structured documentation of contributions
 
