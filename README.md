@@ -52,6 +52,35 @@ The backend source code is maintained in a public GitHub repository, which inclu
 - Copilot Studio agent solution
 - Codebase for Flask-powered image generation services
 
+### 🔧 Setup for Copilot Studio Agent
+
+Set up your AI agent using **Microsoft Copilot Studio**, integrated with **Azure OpenAI** and **Azure AI Search**:
+
+- **Create Agent**  
+  - Go to [Copilot Studio](https://copilotstudio.microsoft.com/)  
+  - Click **Create → Custom Copilot**  
+  - Choose a name and environment
+
+- **Configure Retrieval-Augmented Generation (RAG)**  
+  - Upload your book content (e.g., 20,000 words) to **Azure Blob Storage**  
+  - Use **Azure AI Search** to index the content  
+  - Connect this search index to your agent via custom actions or plugins
+
+- **Integrate Azure OpenAI**  
+  - Deploy an OpenAI resource from the **Azure Portal**  
+  - Use `gpt-4` or `gpt-35-turbo`, and get the API key and endpoint  
+  - Call the endpoint using **Power Automate** or a **Custom Connector**
+
+- **Design Conversation Flow**  
+  - Use the canvas to build guided Q&A for story generation  
+  - Store user inputs in **Dataverse**, **SharePoint**, or custom backend  
+  - Support for world-building, image prompts, and branching narratives
+
+- **Deploy & Test**  
+  - Use the built-in web chat to test your agent  
+  - Deploy to web (e.g., WordPress iframe), **Microsoft Teams**, or **Power Apps**  
+  - Monitor performance via **Copilot Analytics**
+
 ### Setup for Flask app
 
 #### 1. Clone the Repository
