@@ -52,16 +52,16 @@ The backend source code is maintained in a public GitHub repository, which inclu
 - Copilot Studio agent solution
 - Codebase for Flask-powered image generation services
 
-## Setup Instructions
+### Setup for Flask app
 
-### 1. Clone the Repository
+#### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/BhaskarDasari/Whisperwynd-Story-Generator.git
 cd Whisperwynd-Story-Generator/app
 ```
 
-### 2. Configure `.env`
+#### 2. Configure `.env`
 
 Create a `.env` file based on `.env.example` and add:
 
@@ -72,7 +72,7 @@ AZURE_CONN_STR=your_azure_blob_connection_string
 CONTAINER_NAME=images
 ```
 
-### 3. Generate a UUID
+#### 3. Generate a UUID
 
 ```bash
 python GetUUID.py
@@ -80,7 +80,7 @@ python GetUUID.py
 
 Copy and use this UUID for requests.
 
-### 4. Run the App
+#### 4. Run the App
 
 ```bash
 python app.py
@@ -90,9 +90,9 @@ Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 
 ---
 
-## How It Works
+### How It Works
 
-### 🔹 Image Generation Workflow
+#### 🔹 Image Generation Workflow
 
 1. User submits a **prompt** and **UUID**.
 2. App starts a job via RunPod API.
@@ -101,7 +101,7 @@ Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 5. Saves to disk and uploads to Azure Blob.
 6. Returns both local and Azure URLs.
 
-### 🔹 HTML to PDF Workflow
+#### 🔹 HTML to PDF Workflow
 
 1. User sends HTML content + UUID.
 2. WeasyPrint converts it into PDF.
@@ -110,9 +110,9 @@ Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 
 ---
 
-## API Endpoints
+### API Endpoints
 
-### 🔸 `/generate` — Generate Image
+#### 🔸 `/generate` — Generate Image
 
 **POST JSON:**
 ```json
@@ -135,7 +135,7 @@ Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 
 ---
 
-### 🔸 `/convert_html_to_pdf` — Convert HTML to PDF
+#### 🔸 `/convert_html_to_pdf` — Convert HTML to PDF
 
 **POST JSON:**
 ```json
@@ -155,7 +155,7 @@ Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 
 ---
 
-## Tips & Best Practices
+### Tips & Best Practices
 
 - Use a **new UUID** for each operation to prevent overwriting.
 - **.env** file must be properly configured for Azure + RunPod access.
