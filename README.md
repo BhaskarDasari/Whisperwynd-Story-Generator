@@ -41,10 +41,7 @@ All built on Microsoft’s AI stack and deployed through **Azure Web Services** 
 
 ## Setup Instructions
 
-This project is hosted on a WordPress site and invokes an AI agent via Azure Web Services.
-
-To explore:
-1. Navigate to [whisperwynd.com](https://whisperwynd.com).
+1. This project is hosted on a Azure Office 365 tenant and azure web app(not exposed to public) and invokes an AI agent.
 2. Interact with the AI chatbot trained on the original book.
 3. Generate or explore custom stories and visualizations.
 
@@ -76,7 +73,7 @@ Set up your AI agent using **Microsoft Copilot Studio**, integrated with **Azure
   - Support for world-building, image prompts, and branching narratives
 
 - **Deploy & Test**  
-  - Use the built-in web chat to test your agent  
+  - Use the built-in web chat to test your agent inside copilot studio and microsoft teams 
   - Deploy to web (e.g., Azure website, medium)
   - Monitor performance via **Copilot Analytics**
 
@@ -212,11 +209,13 @@ We follow GitHub best practices, including:
 
 ## Future Work
 
+- Using Azure database for managing all the world data, which we do with sharepoint currently
 - Implement story-to-PDF conversion for offline sharing.
+- Integrate Copilot agent with Azure DevOps for seemless deployments.
 - Expand story publishing to platforms like Medium, Substack, and Kindle.
 - Integrate gamification elements into the storytelling experience.
 - Enable collaborative world-building sessions in real time.
-- Integrate Copilot agent with Azure DevOps for seemless deployments.
+
 
 ## Why Microsoft?
 
@@ -224,9 +223,10 @@ This project would not be possible without the power and flexibility of Microsof
 
 - **Copilot Studio** for low-code AI agent development  
 - **Azure OpenAI** for large language model integration  
-- **Azure AI Search** to power semantic document retrieval  
-- **Azure Blob Storage** and **SharePoint** for secure content handling  
-- **Azure Web Services** for reliable deployment and monitoring  
+- **Azure AI Search** to power semantic document retrieva. Whisperwynd story book was added to the AI search service
+- **Azure Blob Storage** for storing generated images
+- **SharePoint** for maintaining of data tables associated with world definition, data storage and the knowledge base
+- **Azure Web Services** for reliable deployment and monitoring of python endpoint 
 - **GitHub** for professional code management and DevOps
 
 ---
