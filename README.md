@@ -52,101 +52,6 @@ The backend source code is maintained in a public GitHub repository, which inclu
 - Copilot Studio agent solution
 - Codebase for Flask-powered image generation services
 
-Please contact the team for access if you're a reviewer or collaborator.
-
-## Contributing & Code Maintenance
-
-All project code is version-controlled and actively maintained in a GitHub repository to ensure:
-- Easy collaboration and code reviews within the team
-- CI/CD workflows for deployment using GitHub Actions and Azure will be implemented in future
-- Transparent issue tracking and feature planning
-- Secure and structured documentation of contributions
-
-We follow GitHub best practices, including:
-- `main` branch protection
-- Pull request approvals
-- Semantic commit messages
-- Weekly code reviews and merge cycles
-
-## Demo
-
-🔗 *Coming Soon* – A live demo video and walkthrough will be added here.
-
-## Future Work
-
-- Implement story-to-PDF conversion for offline sharing.
-- Expand story publishing to platforms like Medium, Substack, and Kindle.
-- Integrate gamification elements into the storytelling experience.
-- Enable collaborative world-building sessions in real time.
-- Integrate Copilot agent with Azure DevOps for seemless deployments.
-
-## Why Microsoft?
-
-This project would not be possible without the power and flexibility of Microsoft’s AI and cloud ecosystem:
-
-- **Copilot Studio** for low-code AI agent development  
-- **Azure OpenAI** for large language model integration  
-- **Azure AI Search** to power semantic document retrieval  
-- **Azure Blob Storage** and **SharePoint** for secure content handling  
-- **Azure Web Services** for reliable deployment and monitoring  
-- **GitHub** for professional code management and DevOps
-
----
-
-## Overview
-
-This application enables users to:
-
-- Generate AI images via the **RunPod API**
-- Convert HTML to PDF using **WeasyPrint**
-- Store files on **Azure Blob Storage**
-- Interact through a **simple web UI** or **REST API**
-
----
-
-## Requirements
-
-- Python 3.8+
-- Flask
-- requests
-- weasyprint
-- azure-storage-blob
-
-Install them via:
-
-```bash
-pip install -r app/requirements.txt
-```
-
----
-
-## Interface Preview
-
-The interface allows inputting prompts, triggering image generation, and downloading results:
-
-![Web Interface](app/static/screenshot.png)
-
----
-
-## Project Structure
-
-```
-Whisperwynd-Story-Generator/
-├── app/
-│   ├── app.py                # Main Flask application
-│   ├── GetUUID.py            # UUID generator script
-│   ├── To_PDF.py             # Optional script for PDF conversion
-│   ├── requirements.txt      # Python dependencies
-│   ├── templates/
-│   │   └── index.html        # Web interface template
-│   └── static/
-│       ├── screenshot.png    # Preview image
-│       └── generated_images/ # Folder for output images/PDFs
-└── README.md                  # Project documentation
-```
-
----
-
 ## Setup Instructions
 
 ### 1. Clone the Repository
@@ -257,3 +162,98 @@ Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 - Keep `.env` secure and untracked (Set `.gitignore`).
 - Test the endpoints.
 ---
+
+
+## Contributing & Code Maintenance
+
+All project code is version-controlled and actively maintained in a GitHub repository to ensure:
+- Easy collaboration and code reviews within the team
+- CI/CD workflows for deployment using GitHub Actions and Azure will be implemented in future
+- Transparent issue tracking and feature planning
+- Secure and structured documentation of contributions
+
+We follow GitHub best practices, including:
+- `main` branch protection
+- Pull request approvals
+- Semantic commit messages
+- Weekly code reviews and merge cycles
+
+## Demo
+
+🔗 *Coming Soon* – A live demo video and walkthrough will be added here.
+
+## Future Work
+
+- Implement story-to-PDF conversion for offline sharing.
+- Expand story publishing to platforms like Medium, Substack, and Kindle.
+- Integrate gamification elements into the storytelling experience.
+- Enable collaborative world-building sessions in real time.
+- Integrate Copilot agent with Azure DevOps for seemless deployments.
+
+## Why Microsoft?
+
+This project would not be possible without the power and flexibility of Microsoft’s AI and cloud ecosystem:
+
+- **Copilot Studio** for low-code AI agent development  
+- **Azure OpenAI** for large language model integration  
+- **Azure AI Search** to power semantic document retrieval  
+- **Azure Blob Storage** and **SharePoint** for secure content handling  
+- **Azure Web Services** for reliable deployment and monitoring  
+- **GitHub** for professional code management and DevOps
+
+---
+
+## Overview
+
+This application enables users to:
+
+- Generate AI images via the **RunPod API**
+- Convert HTML to PDF using **WeasyPrint**
+- Store files on **Azure Blob Storage**
+- Interact through a **simple web UI** or **REST API**
+
+---
+
+## Requirements
+
+- Python 3.8+
+- Flask
+- requests
+- weasyprint
+- azure-storage-blob
+
+Install them via:
+
+```bash
+pip install -r app/requirements.txt
+```
+
+---
+
+## Interface Preview
+
+The interface allows inputting prompts, triggering image generation, and downloading results:
+
+![Web Interface](app/static/screenshot.png)
+
+---
+
+## Project Structure
+
+```
+Whisperwynd-Story-Generator/
+├── app/
+│   ├── app.py                # Main Flask application
+│   ├── GetUUID.py            # UUID generator script
+│   ├── To_PDF.py             # Optional script for PDF conversion
+│   ├── requirements.txt      # Python dependencies
+│   ├── templates/
+│   │   └── index.html        # Web interface template
+│   └── static/
+│       ├── screenshot.png    # Preview image
+│       └── generated_images/ # Folder for output images/PDFs
+└── README.md                  # Project documentation
+```
+
+---
+
