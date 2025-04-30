@@ -180,6 +180,40 @@ Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 
 ---
 
+## Overview
+
+This application enables users to:
+
+- Generate AI images via the **RunPod API**
+- Convert HTML to PDF using **WeasyPrint**
+- Store files on **Azure Blob Storage**
+- Interact through a **simple web UI** or **REST API**
+
+---
+
+## Requirements
+
+- Python 3.8+
+- Flask
+- requests
+- weasyprint
+- azure-storage-blob
+
+Install them via:
+
+```bash
+pip install -r app/requirements.txt
+```
+
+---
+
+## Interface Preview
+
+The interface allows inputting prompts, triggering image generation, and downloading results:
+
+![Web Interface](app/static/screenshot.png)
+
+---
 ### Tips & Best Practices
 
 - Use a **new UUID** for each operation to prevent overwriting.
@@ -228,41 +262,6 @@ This project would not be possible without the power and flexibility of Microsof
 - **SharePoint** for maintaining of data tables associated with world definition, data storage and the knowledge base
 - **Azure Web Services** for reliable deployment and monitoring of python endpoint 
 - **GitHub** for professional code management and DevOps
-
----
-
-## Overview
-
-This application enables users to:
-
-- Generate AI images via the **RunPod API**
-- Convert HTML to PDF using **WeasyPrint**
-- Store files on **Azure Blob Storage**
-- Interact through a **simple web UI** or **REST API**
-
----
-
-## Requirements
-
-- Python 3.8+
-- Flask
-- requests
-- weasyprint
-- azure-storage-blob
-
-Install them via:
-
-```bash
-pip install -r app/requirements.txt
-```
-
----
-
-## Interface Preview
-
-The interface allows inputting prompts, triggering image generation, and downloading results:
-
-![Web Interface](app/static/screenshot.png)
 
 ---
 
