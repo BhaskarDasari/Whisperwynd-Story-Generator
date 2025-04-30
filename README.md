@@ -34,10 +34,10 @@ All built on Microsoft’s AI stack and deployed through **Azure Web Services** 
 
 ## Team Members
 
-- abc  
-- xyz  
-- def  
-- mny  
+- [Eric Silver](https://github.com/ARGENTQUEST)
+- [Bhaskar Dasari](https://github.com/BhaskarDasari)  
+- [Ahmed Mordi](https://github.com/ahmedmmordi)  
+- [Mithradevi_K](https://github.com/MITHRADEVIKcse2023)  
 
 ## Setup Instructions
 
