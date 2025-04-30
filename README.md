@@ -39,6 +39,48 @@ All built on Microsoft’s AI stack and deployed through **Azure Web Services** 
 - [Ahmed Mordi](https://github.com/ahmedmmordi)  
 - [Mithradevi_K](https://github.com/MITHRADEVIKcse2023)  
 
+## Contributing & Code Maintenance
+
+All project code is version-controlled and actively maintained in a GitHub repository to ensure:
+- Easy collaboration and code reviews within the team
+- CI/CD workflows for deployment using GitHub Actions and Azure will be implemented in future
+- Transparent issue tracking and feature planning
+- Secure and structured documentation of contributions
+
+We follow GitHub best practices, including:
+- `main` branch protection
+- Pull request approvals
+- Semantic commit messages
+- Weekly code reviews and merge cycles
+
+## Demo
+
+🔗 *Coming Soon* – A live demo video and walkthrough will be added here.
+
+## Future Work
+
+- Sentiment Analysis by using AI to detect the tone and emotions in the story, giving users feedback on how their writing feels (e.g., happy, sad, exciting).
+- Using Azure database for managing all the world data, which we do with sharepoint currently
+- Implement story-to-PDF conversion for offline sharing.
+- Integrate Copilot agent with Azure DevOps for seemless deployments.
+- Expand story publishing to platforms like Medium, Substack, and Kindle.
+- Integrate gamification elements into the storytelling experience.
+- Enable collaborative world-building sessions in real time.
+
+
+## Why Microsoft?
+
+This project would not be possible without the power and flexibility of Microsoft’s AI and cloud ecosystem:
+
+- **Copilot Studio** for low-code AI agent development  
+- **Azure OpenAI** for large language model integration  
+- **Azure AI Search** to power semantic document retrieva. Whisperwynd story book was added to the AI search service
+- **Azure Blob Storage** for storing generated images
+- **SharePoint** for maintaining of data tables associated with world definition, data storage and the knowledge base
+- **Azure Web Services** for reliable deployment and monitoring of python endpoint 
+- **GitHub** for professional code management and DevOps
+
+---
 ## Setup Instructions
 
 1. This project is hosted on a Azure Office 365 tenant and azure web app(not exposed to public) and invokes an AI agent.
@@ -224,49 +266,6 @@ The interface allows inputting prompts, triggering image generation, and downloa
 - Test the endpoints.
 ---
 
-
-## Contributing & Code Maintenance
-
-All project code is version-controlled and actively maintained in a GitHub repository to ensure:
-- Easy collaboration and code reviews within the team
-- CI/CD workflows for deployment using GitHub Actions and Azure will be implemented in future
-- Transparent issue tracking and feature planning
-- Secure and structured documentation of contributions
-
-We follow GitHub best practices, including:
-- `main` branch protection
-- Pull request approvals
-- Semantic commit messages
-- Weekly code reviews and merge cycles
-
-## Demo
-
-🔗 *Coming Soon* – A live demo video and walkthrough will be added here.
-
-## Future Work
-
-- Sentiment Analysis by using AI to detect the tone and emotions in the story, giving users feedback on how their writing feels (e.g., happy, sad, exciting).
-- Using Azure database for managing all the world data, which we do with sharepoint currently
-- Implement story-to-PDF conversion for offline sharing.
-- Integrate Copilot agent with Azure DevOps for seemless deployments.
-- Expand story publishing to platforms like Medium, Substack, and Kindle.
-- Integrate gamification elements into the storytelling experience.
-- Enable collaborative world-building sessions in real time.
-
-
-## Why Microsoft?
-
-This project would not be possible without the power and flexibility of Microsoft’s AI and cloud ecosystem:
-
-- **Copilot Studio** for low-code AI agent development  
-- **Azure OpenAI** for large language model integration  
-- **Azure AI Search** to power semantic document retrieva. Whisperwynd story book was added to the AI search service
-- **Azure Blob Storage** for storing generated images
-- **SharePoint** for maintaining of data tables associated with world definition, data storage and the knowledge base
-- **Azure Web Services** for reliable deployment and monitoring of python endpoint 
-- **GitHub** for professional code management and DevOps
-
----
 
 ## Project Structure
 
