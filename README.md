@@ -78,7 +78,6 @@ Set up your AI agent using **Microsoft Copilot Studio**, integrated with **Azure
   - Monitor performance via **Copilot Analytics**
  
 #### Agent Outcome Preview
-https://github.com/BhaskarDasari/Whisperwynd-Story-Generator/blob/main/Sample%20Story%20Generated%20By%20Copilot%20AI%20Agent.pdf
 [view sample file](https://github.com/BhaskarDasari/Whisperwynd-Story-Generator/blob/main/Sample%20Story%20Generated%20By%20Copilot%20AI%20Agent.pdf)
 
 ### 🔧 Setup for Flask app
