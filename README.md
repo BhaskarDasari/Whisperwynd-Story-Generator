@@ -58,8 +58,7 @@ Set up your AI agent using **Microsoft Copilot Studio**, integrated with **Azure
 
 - **Create Agent**  
   - Go to [Copilot Studio](https://copilotstudio.microsoft.com/)  
-  - Click **Create → Custom Copilot**  
-  - Choose a name and environment
+  - Create custom copilot agent
 
 - **Configure Retrieval-Augmented Generation (RAG)**  
   - Upload your book content (e.g., 20,000 words) to **Azure Blob Storage**  
@@ -71,14 +70,14 @@ Set up your AI agent using **Microsoft Copilot Studio**, integrated with **Azure
   - Use `gpt-4` or `gpt-35-turbo`, and get the API key and endpoint  
   - Call the endpoint using **Power Automate** or a **Custom Connector**
 
-- **Design Conversation Flow**  
+- **Design Conversation Flow(POwer Automate)**  
   - Use the canvas to build guided Q&A for story generation  
-  - Store user inputs in **Dataverse**, **SharePoint**, or custom backend  
+  - Store user inputs in **blob storage**, **SharePoint**, or custom backend  
   - Support for world-building, image prompts, and branching narratives
 
 - **Deploy & Test**  
   - Use the built-in web chat to test your agent  
-  - Deploy to web (e.g., WordPress iframe), **Microsoft Teams**, or **Power Apps**  
+  - Deploy to web (e.g., Azure website, medium)
   - Monitor performance via **Copilot Analytics**
 
 ### 🔧 Setup for Flask app
