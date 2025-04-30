@@ -76,6 +76,9 @@ Set up your AI agent using **Microsoft Copilot Studio**, integrated with **Azure
   - Use the built-in web chat to test your agent inside copilot studio and microsoft teams 
   - Deploy to web (e.g., Azure website, medium)
   - Monitor performance via **Copilot Analytics**
+ 
+#### Agent Outcome Preview
+
 
 ### 🔧 Setup for Flask app
 
