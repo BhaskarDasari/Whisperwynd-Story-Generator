@@ -81,7 +81,7 @@ Set up your AI agent using **Microsoft Copilot Studio**, integrated with **Azure
   - Deploy to web (e.g., WordPress iframe), **Microsoft Teams**, or **Power Apps**  
   - Monitor performance via **Copilot Analytics**
 
-### Setup for Flask app
+### 🔧 Setup for Flask app
 
 #### 1. Clone the Repository
 
