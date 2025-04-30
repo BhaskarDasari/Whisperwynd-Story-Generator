@@ -1,6 +1,6 @@
 ## Whisperwynd Story Generator (FlaskApp)
 
-
+This project focuses on developing an AI-powered application, "Whisperwind Story Generator," designed to enhance user engagement with the Whisperwind story world. The application leverages Microsoft's Copilot Studio and generative AI to provide interactive experiences.
 Whisperwynd-Story-Generator is a Flask-based web application for AI-powered image generation, HTML-to-PDF conversion, and Azure Blob cloud storage.
 
 ---
